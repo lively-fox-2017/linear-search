@@ -29,6 +29,7 @@ let globalLinearSearch = (target, values) => {
     }
   }
   return allIndex;
+  
 }
 
 let banana_arr = "banana".split("");
