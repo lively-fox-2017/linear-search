@@ -40,8 +40,7 @@ let globalLinearSearch = (target, values) => {
   	return counts
   }
 
-  else
-  	return false
+  	return -1 
 }
 
 let banana_arr = "banana".split("");
