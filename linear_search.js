@@ -3,10 +3,10 @@
 // Release 0
 console.log("Linear Search")
 let linearSearch = (target, values) => {
-  //write your code here
-}
+  return values.indexOf(target);
+};
 
-let random_numbers = [ 6, 29, 18, 2, 72, 19, 18, 10, 37 ];
+let random_numbers = [6, 29, 18, 2, 72, 19, 18, 10, 37];
 
 console.log(linearSearch(18, random_numbers));
 // 2
@@ -16,8 +16,16 @@ console.log(linearSearch(9, random_numbers));
 // Release 1
 console.log("Global Linear Search")
 let globalLinearSearch = (target, values) => {
-  //write your code here
-}
+  let data = [];
+  let datas=[];
+  for (var a = 0; a < values.length; a++) {
+    if (values[a].indexOf(target) !== -1) {
+      data.push(a);
+    }else{
+    datas.push(a);}
+  }
+  return data;
+};
 
 let banana_arr = "banana".split("");
 // ["b", "a", "n", "a", "n", "a"]
@@ -27,4 +35,4 @@ console.log(globalLinearSearch("a", banana_arr));
 module.exports = {
   linearSearch,
   globalLinearSearch
-}
+};
