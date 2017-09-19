@@ -54,7 +54,7 @@ let globalLinearSearch = (target, values) => {
   // return arr
 
   // ========== METODE RECURSIVE ==========
-  if(values[temp] === target){ 
+  if(values[temp] === target){
     arr.push(temp)
     if(temp === values.length -1) {
       return arr
